@@ -5,6 +5,7 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 /* ROUTE Imports */
+import dashboardRoutes from "./routes/dashboardRoutes";
 
 /* Configurations */
 dotenv.config();
@@ -19,5 +20,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* Routes */
+app.use("/dashboard", dashboardRoutes);
 
 /* Server */
+const port = process.env.PORT || 3001;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
