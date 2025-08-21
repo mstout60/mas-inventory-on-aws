@@ -26,3 +26,11 @@ declare type DashboardMetrics = {
 declare type ExpenseSums = {
   [category: string]: number;
 };
+
+declare type Products = Products[];
+
+declare type Product = Products;
+
+declare type NewProduct = Omit<Products, "productId">;
+
+declare type ProductFormData = NewProduct;
