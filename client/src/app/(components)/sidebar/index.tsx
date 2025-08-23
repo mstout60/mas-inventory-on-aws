@@ -82,7 +82,7 @@ const Sidebar = () => {
         }`}
       >
         <Image
-          src="https://s3-mas-inventorymanagement.s3.us-east-1.amazonaws.com/logo(1).png"
+          src="https://s3-mas-inventorymanagement.s3.us-east-1.amazonaws.com/logo.png"
           alt="mstout-logo"
           width={27}
           height={27}
